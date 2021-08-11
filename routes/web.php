@@ -81,7 +81,7 @@ Route::post('/register', [RegisteredUserController::class, 'create'])
                 ->middleware('auth')
                 ->name('register');
 
-
+s
 
 
 Route::get('/table', function(){
@@ -97,10 +97,15 @@ Route::get('/add_section', function(){
 Route::get('/add-section', [DashboardController::class, 'addSection']);
 
 Route::get('/add-categ/{id}', [DashboardController::class, 'addCateg']);
+
+
+// duplicated line for testing
+
+Route::get('/add-categ/{id}', [DashboardController::class, 'addCateg']);
                 
                 
 
 
 
 
-/*Route::post('/logout',[LogoutUserController::class, 'logout'])->name('logout');*/
+/*Route::post('/logout',[LogoutUserController::class, 'logout'])->name('logout'); logout*/ 
